@@ -10,7 +10,7 @@
     <title>Js_Calculator</title>
 </head>
 <body>
-    <h1 class='text-center'>Calculator</h1>
+     <h1 class='text-center'>Calculator</h1>
     <div class="container">
         <div class="screen"><input type="text" id=te size =33px></div>
         <table class ='center'>
@@ -20,7 +20,7 @@
                 <td><button id=int value="7" onclick="getnum('8')">8</button></td>
                 <td><button id=int value="7" onclick="getnum('9')">9</button></td>
                 <td><button id=int value="7" onclick="getnum('7')">DEL</button></td>
-                <td><button id=int value="7" onclick="getnum('7')">AC</button></td>
+                <td><button id=int value="7" onclick="clearresult()">AC</button></td>
 
 
             </tr>
@@ -28,8 +28,8 @@
                 <td><button id=int value="7" onclick="getnum('4')">4</button></td>
                 <td><button id=int value="7" onclick="getnum('5')">5</button></td>
                 <td><button id=int value="7" onclick="getnum('6')">6</button></td>
-                <td><button id=int value="7" onclick="getnum('x')">x</button></td>
-                <td><button id=int value="7" onclick="getnum('%')">%</button></td>
+                <td><button id=int value="7" onclick="getnum('*')">x</button></td>
+                <td><button id=int value="7" onclick="getnum('/')">%</button></td>
 
             </tr> <tr>
                 <td><button id=int value="7" onclick="getnum('1')">1</button></td>
@@ -42,12 +42,14 @@
                 <td><button id=int value="7" onclick="getnum('0')">0</button></td>
                 <td><button id=int value="7" onclick="getnum('.')">.</button></td>
                 <td><button id=int value="7" onclick="getnum('7')">^</button></td>
-                <td><button id=int value="7" onclick="getnum('7')">ANS</button></td>
-                <td><button id=int value="7" onclick="getnum('7')">=</button></td>
+                <td><button id=int value="7" onclick="getAnswer()">ANS</button></td>
+                <td><button id=int value="7" onclick="getAnswer()">=</button></td>
 
             </tr>
         </table>
-    </div>
+    </div> 
+
+    
     <script src="app.js"></script>
 </body>
 </html>
